@@ -1,8 +1,10 @@
-# ShaderCraft — Issues & Feedback
+# ShaderCraft Alpha v0.1.0
+
+<img width="1916" height="1018" alt="image" src="https://github.com/user-attachments/assets/b010bd69-881e-40ca-8f84-f41829266b22" />
 
 Welcome! This repository is the **public issue tracker** for **ShaderCraft** — an
 infinite node canvas hosting focused studios for painting, photo development,
-vector work, animation, 3D and more.
+vector work, animation, 3D and more!
 
 **The app is available at shadercraft.com** — the only official site.
 
