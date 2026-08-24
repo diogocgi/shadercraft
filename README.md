@@ -1,6 +1,6 @@
 # ShaderCraft Alpha v0.1.0
 
-<img width="1916" height="1018" alt="image" src="https://github.com/user-attachments/assets/b010bd69-881e-40ca-8f84-f41829266b22" />
+<img width="1664" height="887" alt="image" src="https://github.com/user-attachments/assets/c0d7b5f6-3346-433e-a108-e344fcb88d8e" />
 
 Welcome! This repository is the **public issue tracker** for **ShaderCraft** — an
 infinite node canvas hosting focused studios for painting, photo development,
