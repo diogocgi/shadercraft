@@ -99,10 +99,11 @@ ShaderCraft is built and maintained by one person, so response time may vary.
 | `perf` | Speed, memory, or responsiveness |
 | `rendering` | WebGL / GPU / driver-specific |
 | `ux` | Workflow, layout, discoverability |
-| `docs` | Documentation |
+| `docs` | Improvements or additions to documentation |
 | `duplicate` | Tracked elsewhere — see the linked issue |
 | `wontfix` | Deliberately out of scope (always with a reason) |
 | `shipped` | Fixed or implemented in a released build |
+| `accessibility` | Barrier affecting people with disabilities |
 
 ---
 
