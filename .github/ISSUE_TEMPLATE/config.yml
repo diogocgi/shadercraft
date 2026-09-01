@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Question or idea
+    url: https://github.com/diogocgi/shadercraft/discussions
+    about: Ask how something works, or float an idea before it becomes a request.
+  - name: Security vulnerability
+    url: https://github.com/diogocgi/shadercraft/security/policy
+    about: Never open a public issue for a vulnerability. Report it privately.
+  - name: ShaderCraft
+    url: https://shadercraft.com
+    about: The editor itself, and the in-app documentation.

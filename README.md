@@ -13,47 +13,51 @@ vector work, animation, 3D and more!
 
 ## What to open here
 
+Use **New issue** on the tracker — blank issues are turned off, so every report
+starts from one of the forms below.
+
 | I want to… | Open |
 |---|---|
 | Report something broken, wrong, or crashing | **Bug report** |
+| Report a rendering / performance problem | **Bug report** — fill in the *Rendering / performance details* section |
 | Ask for a new feature, tool, or format | **Feature request** |
-| Report a rendering / performance problem | **Bug report** (add the perf details below) |
-| Ask a question or discuss an idea | **Discussion** (if enabled) or a **Question** issue |
+| Ask how something works, or whether it is possible | **Discussion** (if enabled) or the **Question** form |
 | Report a security vulnerability | **Do not open an issue** — see [Security](#security) |
 
-Before opening anything, please **search existing issues** (including closed ones).
-If you find a match, add a like or comment on it instead of
-opening a duplicate.
+Every form starts with the same checkbox: **search the existing issues first**,
+including closed ones. If you find a match, add a 👍 or a comment on it instead
+of opening a duplicate — feature requests are prioritised partly by reactions.
 
 ---
 
 ## Reporting a bug
 
-A good report is one I can reproduce without asking you follow-up questions.
-Please include:
+The **Bug report** form asks for everything I need to reproduce a problem without
+follow-up questions:
 
-1. **What you did** — the exact steps, in order, from a fresh document if possible.
-2. **What you expected** to happen.
-3. **What actually happened** — including any error text.
-4. **Which mode** you were in: Workspace, Paint, Photo, Vector, Animation,
-   Mesh Viewer, Pixel Wall Art, Mesh Paint or Diagram.
-5. **Environment**:
-   - Browser + version (e.g. Chrome 141, Firefox 145, Safari 18)
-   - Operating system + version
-   - GPU / graphics card, if you know it
-   - App version (shown in the bottom right corner of the editor)
-6. **A screenshot, screen recording, or GIF.** For anything visual — a wrong
-   color, a misplaced handle, a stroke that doesn't land where the cursor is —
-   this is worth more than paragraphs of description.
-7. **A `.shc` project file**, if the bug depends on a specific document and you're
-   happy to share it. Drag it into the issue to attach it.
+1. **What happened** — what went wrong, and what you expected instead.
+2. **Steps to reproduce** — the exact clicks, from a fresh document where possible.
+3. **Where in the app** — Workspace, Paint, Photo, Vector, Animation, Diagram,
+   Mesh Viewer, Meshgen, Mesh Paint, Parametric, Assembly, Gears, Diorama,
+   Pixel Wall Art, Studio or Website. "Not sure" is a valid answer.
+4. **How you are running it** — in a browser, or the desktop app.
+5. **Version** — the version number shown in the app.
+6. **Browser, OS and GPU** — e.g. `Chrome 141, Windows 11, NVIDIA RTX 3060`.
+   Your GPU is listed at `chrome://gpu` (Chrome/Edge) or `about:support` (Firefox).
+7. **Console errors** — open devtools (F12), reproduce the bug, paste anything red.
+8. **Rendering / performance details** — only for slowness, stutter, or something
+   drawn incorrectly: document size (canvas resolution, layer count, mesh triangle
+   count), what makes it slow (painting, panning, playback, export), and whether it
+   was ever faster.
+9. **Screenshots, recordings, or a `.shc` file** — for anything visual, a short
+   screen recording explains more than any description. Drag files into the box to
+   attach them. Attach the project file if the bug depends on a specific document
+   and you are happy to share it.
 
 ### Extra detail that helps a lot
 
 - **Does it reproduce every time**, or only sometimes? Only on large documents?
   Only after a particular action?
-- **Performance problems**: what makes it slow (document size, layer count, zoom
-  level, brush size, etc)
 - **Data loss / autosave issues**: say whether the document had been saved,
   reloaded, or restored, and roughly how large it was. These get top priority.
 
@@ -61,16 +65,28 @@ Please include:
 
 ## Requesting a feature
 
-Describe the **problem**, not only the solution. The most useful requests answer:
+The **Feature request** form asks for the **problem**, not only the solution:
 
-- **What are you trying to make/achieve?** The real task, in your words.
-- **What does it cost you today?** What you currently do instead, and why that is
-  slow, imprecise, or not possible.
-- **What would "done" look like?** A sketch, a mockup, or a reference to how
-  another tool (Photoshop, Illustrator, Lightroom, Affinity, Blender, Figma,
-  Krita, After Effects…) handles it — naming the tool and the feature is a big
-  shortcut for me.
-- **Which mode** it belongs to, if you have a view.
+- **What are you trying to do** — the real task you are stuck on, in your words.
+  This is the most useful part of the request.
+- **What would you like ShaderCraft to do** — the feature as you imagine it.
+  Rough is fine.
+- **Where it belongs** — a mode, *Import / export formats*, *Across the whole app*,
+  or "Not sure".
+- **How you do it today** — the workaround you use, in ShaderCraft or another app,
+  and why it is not good enough.
+- **References** — sketches, screenshots, or another tool that does this well
+  (Photoshop, Illustrator, Lightroom, Affinity, Blender, Figma, Krita,
+  After Effects…). Naming the tool and the feature is a big shortcut for me.
+
+---
+
+## Asking a question
+
+If Discussions are open on the tracker, prefer them for open-ended conversation —
+they thread better. Use the **Question** form when you want a direct answer. It
+asks for the question, where in the app it applies, and what you have already
+tried. Please check the in-app documentation and the existing issues first.
 
 ---
 
@@ -94,8 +110,8 @@ ShaderCraft is built and maintained by one person, so response time may vary.
 |---|---|
 | `bug` | Confirmed defect |
 | `needs-repro` | I can't reproduce it yet — more detail needed |
-| `feature` | New capability requested |
-| `enhance` | Improvement to something that already exists |
+| `enhancement` | New capability, or an improvement to something that already exists |
+| `question` | A question rather than a defect or a request |
 | `perf` | Speed, memory, or responsiveness |
 | `rendering` | WebGL / GPU / driver-specific |
 | `ux` | Workflow, layout, discoverability |
@@ -124,9 +140,16 @@ against you.
 
 ## Security
 
-**Please do not open a public issue for security vulnerabilities**.
+**Please do not open a public issue for security vulnerabilities.**
 
-Email **shadercraftpt@gmail.com** with the details and steps to reproduce.
+Report it privately, in either of these ways:
+
+- The **Report a vulnerability** button under the tracker's **Security** tab, which
+  opens a private advisory only the maintainers can see.
+- Email **shadercraftpt@gmail.com** with `SECURITY` in the subject line.
+
+The full policy — what is in and out of scope, what to include, and what to avoid
+testing — is in [SECURITY.md](.github/SECURITY.md).
 
 ---
 

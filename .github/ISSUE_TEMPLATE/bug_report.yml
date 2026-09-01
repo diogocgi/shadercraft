@@ -1,0 +1,112 @@
+name: Bug report
+description: Something is broken, wrong, crashing, slow, or rendering incorrectly.
+title: '[Bug]: '
+labels: ['bug']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please search the existing issues first — **including closed ones**. If you find a match, add a 👍 or a comment there instead of opening a duplicate.
+
+        Rendering and performance problems belong here too: fill in the **Rendering / performance** section near the bottom.
+
+  - type: checkboxes
+    id: search
+    attributes:
+      label: Before you start
+      options:
+        - label: I searched the existing issues, including closed ones, and this is not a duplicate.
+          required: true
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: What went wrong, and what you expected instead.
+      placeholder: |
+        Rotating a group with the transform handles skews it. I expected it to stay rectangular.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: The exact clicks, from a fresh document. If it only happens with one file, attach the file below.
+      value: |
+        1.
+        2.
+        3.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: mode
+    attributes:
+      label: Where in the app
+      options:
+        - Workspace
+        - Paint
+        - Photo
+        - Vector
+        - Animation
+        - Diagram
+        - Mesh Viewer
+        - Mesh Paint
+        - Pixel Wall Art
+        - Studio (projects / file management)
+        - Website
+        - Not sure
+    validations:
+      required: true
+
+  - type: dropdown
+    id: platform
+    attributes:
+      label: How are you running ShaderCraft
+      options:
+        - In a browser
+        - Desktop app
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: The version number shown in the app.
+      placeholder: '0.4.2'
+    validations:
+      required: true
+
+  - type: input
+    id: environment
+    attributes:
+      label: Browser, OS and GPU
+      description: 'Your GPU is listed at chrome://gpu (Chrome/Edge) or about:support (Firefox).'
+      placeholder: 'Chrome 141, Windows 11, NVIDIA RTX 3060'
+    validations:
+      required: true
+
+  - type: textarea
+    id: console
+    attributes:
+      label: Console errors
+      description: Open the browser devtools console (F12), reproduce the bug, and paste anything red. Leave blank if there is nothing.
+      render: text
+
+  - type: textarea
+    id: performance
+    attributes:
+      label: Rendering / performance details
+      description: |
+        Only if the problem is slowness, stutter, or something drawn incorrectly.
+        Tell us the document size (canvas resolution, layer count, mesh triangle count), what makes it slow (painting, panning, playback, export), and whether it was ever faster.
+      placeholder: |
+        4096x4096 paint document, 30 layers. Brush strokes lag about half a second behind the cursor once the document passes ~20 layers. Panning stays smooth.
+
+  - type: textarea
+    id: attachments
+    attributes:
+      label: Screenshots, recordings, or a .shc file
+      description: A short screen recording explains more than any description. Drag files into this box to attach them.

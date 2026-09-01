@@ -1,0 +1,57 @@
+name: Question
+description: Ask how something works, or whether something is possible.
+title: '[Question]: '
+labels: ['question']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        If Discussions are open on this repo, prefer them for open-ended conversation — they thread better. Use this form when you want a direct answer.
+
+        Please check the in-app documentation and the existing issues first.
+
+  - type: checkboxes
+    id: search
+    attributes:
+      label: Before you start
+      options:
+        - label: I searched the existing issues, including closed ones, and this has not been answered.
+          required: true
+
+  - type: textarea
+    id: question
+    attributes:
+      label: Your question
+    validations:
+      required: true
+
+  - type: dropdown
+    id: mode
+    attributes:
+      label: Where in the app
+      options:
+        - Workspace (the infinite canvas)
+        - Paint
+        - Photo
+        - Vector
+        - Animation
+        - Diagram
+        - Mesh Viewer
+        - Meshgen
+        - Mesh Paint
+        - Parametric
+        - Assembly
+        - Gears
+        - Diorama
+        - Pixel Wall Art
+        - Studio (projects / file management)
+        - Import / export formats
+        - Not sure / somewhere else
+    validations:
+      required: true
+
+  - type: textarea
+    id: tried
+    attributes:
+      label: What you have tried
+      description: What you already looked at or attempted. Screenshots help — drag them into this box.

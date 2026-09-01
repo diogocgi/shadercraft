@@ -1,0 +1,73 @@
+name: Feature request
+description: Ask for a new feature, tool, format, or improvement to an existing one.
+title: '[Feature]: '
+labels: ['enhancement']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please search the existing issues first — **including closed ones**. If someone already asked for this, add a 👍 or a comment there; requests are prioritised partly by reactions.
+
+  - type: checkboxes
+    id: search
+    attributes:
+      label: Before you start
+      options:
+        - label: I searched the existing issues, including closed ones, and this is not a duplicate.
+          required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What are you trying to do
+      description: Describe the actual task you are stuck on, not the solution you have in mind. This is the most useful part of the request.
+      placeholder: |
+        I cut sticker sheets on a vinyl plotter and need a uniform outline around every shape on the artboard, then a single cut path for the sheet.
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: What would you like ShaderCraft to do
+      description: The feature or tool as you imagine it. Rough is fine.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: mode
+    attributes:
+      label: Where it belongs
+      options:
+        - Workspace (the infinite canvas)
+        - Paint
+        - Photo
+        - Vector
+        - Animation
+        - Diagram
+        - Mesh Viewer
+        - Meshgen
+        - Mesh Paint
+        - Parametric
+        - Assembly
+        - Gears
+        - Diorama
+        - Pixel Wall Art
+        - Studio (projects / file management)
+        - Import / export formats
+        - Across the whole app
+        - Not sure
+    validations:
+      required: true
+
+  - type: textarea
+    id: workaround
+    attributes:
+      label: How you do it today
+      description: The workaround you currently use, in ShaderCraft or in another app — and why it is not good enough.
+
+  - type: textarea
+    id: references
+    attributes:
+      label: References
+      description: Other tools that do this well, links, sketches, screenshots. Drag images into this box to attach them.
